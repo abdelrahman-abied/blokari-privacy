@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your Blokari account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f1effa; --surface:#fff; --fg:#1a1b3a; --soft:#43466b; --line:#d3cfec; --accent:#0a7046; --navy:#14152b; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#14152b; --surface:#1e2040; --fg:#f4f2ff; --soft:#c9c8e6; --line:#3a3d75; --accent:#3ddc97; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font: 17px/1.7 "Tajawal", system-ui, sans-serif; padding: 32px max(16px, env(safe-area-inset-left)) 64px max(16px, env(safe-area-inset-right)); }
+main { max-width: 720px; margin: 0 auto; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: clamp(20px, 5vw, 44px); }
+header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; flex-wrap: wrap; }
+header img { width:56px; height:56px; border-radius:14px; }
+.lang { margin-inline-start:auto; font-weight:700; color:var(--accent); text-decoration:none; }
+h1 { font-family:"Baloo Bhaijaan 2", "Tajawal", sans-serif; font-size: clamp(28px, 5vw, 38px); line-height:1.2; margin:0; }
+h2 { font-family:"Baloo Bhaijaan 2", "Tajawal", sans-serif; font-size: 23px; margin: 32px 0 6px; }
+h3 { font-size: 18px; margin: 22px 0 4px; }
+p, li { color: var(--soft); }
+strong { color: var(--fg); }
+a { color: var(--accent); overflow-wrap: anywhere; }
+code { font-size: .9em; background: var(--bg); border-radius: 6px; padding: 1px 6px; direction: ltr; unicode-bidi: isolate; }
+ul, ol { padding-inline-start: 1.3em; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="../icon.png" alt="">
+  <a class="lang" href="../ar/delete-account/" hreflang="ar">العربية</a>
+</header>
+<h1>Delete your Blokari account and cloud save</h1>
+<p><strong>Blokari</strong> (<code>com.amacraft.blokari</code>), a puzzle game for Android by <strong>amacraft</strong>.</p>
+<p>This page explains how to delete the account and the cloud save that Blokari creates when you sign in with your Google account to save your progress. You only have one if you turned on cloud save in the game's settings ("Save my progress to my Google account"). If you never did, we hold no account and no saved progress of yours, and there is nothing to delete on our side.</p>
+<h2>Delete it in the game</h2>
+<ol><li>Open Blokari.</li><li>Open <strong>Settings</strong> and scroll to <strong>Cloud save</strong>.</li><li>Tap <strong>Delete my cloud save</strong> and confirm.</li></ol>
+<p>Your account and cloud save are deleted at once. The progress on your phone stays, and you can keep playing.</p>
+<p>Signing out is not the same: it only stops saving to the cloud and keeps both copies.</p>
+<h2>Delete it without the app</h2>
+<p>If you no longer have the game or the phone, send an email to <strong>amacraft.io@gmail.com</strong> from the address of the Google account you signed in with, and ask us to delete your Blokari account. We use that address to find your account, so please write from it. We delete your account and cloud save within <strong>30 days</strong> and reply to confirm.</p>
+<p>Uninstalling the game does <strong>not</strong> delete your cloud save. Use one of the two ways above.</p>
+<h2>What is deleted</h2>
+<ul><li><strong>Your Blokari account</strong> in Firebase Authentication (a Google service we use to run the sign-in): your email address, name and profile photo link as provided by Google, your Google account ID, your Firebase user ID, and the dates you created the account and last signed in.</li><li><strong>Your cloud save</strong> in Cloud Firestore: the copy of your progress and settings, with the time it was saved and the app version.</li></ul>
+<p>We keep nothing of either on our side after the deletion, and there is no extra retention period.</p>
+<h2>What is not affected</h2>
+<ul><li><strong>The progress on your phone</strong> stays on your phone. To remove it, clear the game's storage in Android settings or uninstall the game.</li><li><strong>Your Google account</strong> itself is not changed or deleted.</li><li><strong>Ads, analytics and crash data</strong> that Google receives through the game are linked only to random identifiers for your installation, not to your account, and are kept and deleted as described in sections 2 and 3 of the privacy policy.</li></ul>
+<p>The full details are in the <a href="../">Blokari privacy policy</a>.</p>
+<p>amacraft<br> Email: amacraft.io@gmail.com</p>
+</main>
+</body>
+</html>

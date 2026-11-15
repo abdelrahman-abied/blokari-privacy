@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حذف حسابك في Blokari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f1effa; --surface:#fff; --fg:#1a1b3a; --soft:#43466b; --line:#d3cfec; --accent:#0a7046; --navy:#14152b; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#14152b; --surface:#1e2040; --fg:#f4f2ff; --soft:#c9c8e6; --line:#3a3d75; --accent:#3ddc97; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font: 17px/1.7 "Tajawal", system-ui, sans-serif; padding: 32px max(16px, env(safe-area-inset-left)) 64px max(16px, env(safe-area-inset-right)); }
+main { max-width: 720px; margin: 0 auto; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: clamp(20px, 5vw, 44px); }
+header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; flex-wrap: wrap; }
+header img { width:56px; height:56px; border-radius:14px; }
+.lang { margin-inline-start:auto; font-weight:700; color:var(--accent); text-decoration:none; }
+h1 { font-family:"Baloo Bhaijaan 2", "Tajawal", sans-serif; font-size: clamp(28px, 5vw, 38px); line-height:1.2; margin:0; }
+h2 { font-family:"Baloo Bhaijaan 2", "Tajawal", sans-serif; font-size: 23px; margin: 32px 0 6px; }
+h3 { font-size: 18px; margin: 22px 0 4px; }
+p, li { color: var(--soft); }
+strong { color: var(--fg); }
+a { color: var(--accent); overflow-wrap: anywhere; }
+code { font-size: .9em; background: var(--bg); border-radius: 6px; padding: 1px 6px; direction: ltr; unicode-bidi: isolate; }
+ul, ol { padding-inline-start: 1.3em; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="../../icon.png" alt="">
+  <a class="lang" href="../../delete-account/" hreflang="en">English</a>
+</header>
+<h1>حذف حسابك وحفظك السحابي في Blokari</h1>
+<p><strong>Blokari</strong> (الحزمة <code>com.amacraft.blokari</code>)، لعبة ألغاز لأجهزة Android من تطوير <strong>amacraft</strong>.</p>
+<p>توضح هذه الصفحة كيف تحذف الحساب والحفظ السحابي اللذين تنشئهما Blokari عندما تسجّل الدخول بحساب Google لحفظ تقدمك. لا يكون لديك حساب إلا إذا فعّلت الحفظ السحابي من إعدادات اللعبة (حفظ التقدّم &gt; "ادخل بحساب جوجل"). وإذا لم تفعّله من قبل، فنحن لا نحتفظ بأي حساب أو تقدم محفوظ لك، ولا يوجد ما يُحذف لدينا.</p>
+<h2>الحذف من داخل اللعبة</h2>
+<ol><li>افتح Blokari.</li><li>افتح <strong>الإعدادات</strong>، وانتقل إلى قسم <strong>حفظ التقدّم</strong>.</li><li>اضغط <strong>امسح الحفظ من السحابة</strong> ثم أكّد.</li></ol>
+<p>يُحذف حسابك وحفظك السحابي فورًا. ويبقى التقدم المحفوظ على هاتفك كما هو، ويمكنك متابعة اللعب.</p>
+<p>تسجيل الخروج ليس حذفًا: هو يوقف الحفظ في السحابة فقط، وتبقى النسختان كما هما.</p>
+<h2>الحذف بدون التطبيق</h2>
+<p>إذا لم تعد اللعبة أو الهاتف معك، فأرسل رسالة إلى <strong>amacraft.io@gmail.com</strong> من عنوان حساب Google الذي سجّلت الدخول به، واطلب حذف حسابك في Blokari. نستخدم هذا العنوان للعثور على حسابك، لذلك اكتب لنا منه. نحذف حسابك وحفظك السحابي خلال <strong>30 يومًا</strong> ونرد عليك للتأكيد.</p>
+<p>إلغاء تثبيت اللعبة <strong>لا</strong> يحذف حفظك السحابي. استخدم إحدى الطريقتين السابقتين.</p>
+<h2>ما يُحذف</h2>
+<ul><li><strong>حسابك في Blokari</strong> على Firebase Authentication (خدمة من Google نستخدمها لتسجيل الدخول): بريدك الإلكتروني واسمك ورابط صورة ملفك الشخصي كما تقدمها Google، ومعرّف حساب Google، ومعرّف المستخدم في Firebase، وتاريخ إنشاء الحساب وآخر تسجيل دخول.</li><li><strong>حفظك السحابي</strong> على Cloud Firestore: نسخة تقدمك وإعداداتك، مع وقت الحفظ وإصدار التطبيق.</li></ul>
+<p>لا نحتفظ بأي شيء منهما لدينا بعد الحذف، ولا توجد مدة احتفاظ إضافية.</p>
+<h2>ما لا يتأثر</h2>
+<ul><li><strong>التقدم المحفوظ على هاتفك</strong> يبقى على هاتفك. لحذفه امسح بيانات اللعبة من إعدادات Android أو ألغِ تثبيت اللعبة.</li><li><strong>حساب Google الخاص بك</strong> نفسه لا يتغير ولا يُحذف.</li><li><strong>بيانات الإعلانات والتحليلات وتقارير الأعطال</strong> التي تتلقاها Google عن طريق اللعبة مرتبطة فقط بمعرّفات عشوائية لنسخة اللعبة المثبتة لديك، وليس بحسابك، وتُحفظ وتُحذف كما هو موضح في القسمين 2 و3 من سياسة الخصوصية.</li></ul>
+<p>التفاصيل الكاملة في <a href="../../ar.html">سياسة الخصوصية للعبة Blokari</a>.</p>
+<p>amacraft<br> البريد الإلكتروني: amacraft.io@gmail.com</p>
+</main>
+</body>
+</html>
